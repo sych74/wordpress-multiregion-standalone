@@ -18,7 +18,7 @@ globals:
   cluster_name: ${settings.cluster_name:false}
   
 onInstall:
-  - env.control.AddContainerEnvVars[sqldb]:
+  - env.control.AddContainerEnvVars[cp]:
       vars:
         REPLICA_USER: ${globals.repl_user}
         REPLICA_PSWD: ${globals.repl_pass}

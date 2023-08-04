@@ -304,6 +304,9 @@ actions:
         return {
           result: 0
         }
+responses:
+  1009:
+    type: warning
 
 success:
   email: /success/email/${globals.stack}/success-${globals.success}.md?_r=${fn.random}

@@ -288,11 +288,12 @@ actions:
     
                 if (regionsList.indexOf(region.hardNodeGroups[k].uniqueName) != -1) {
                   value = envName + "-1." + regions.array[i].domain;
+                  var messageValue = (50 - regions.array[i].domain.length);
     
                   if (value.length > 52) {
                     return {
                       result: 1009,
-                      message: "Domain length is too much. Please install JPS with a lower domain name"
+                      message: "Domain name length for current regions must be less or equal " + messageValue
                     }
                   }
                 }

@@ -288,7 +288,7 @@ actions:
     
                 if (regionsList.indexOf(region.hardNodeGroups[k].uniqueName) != -1) {
                   value = envName + "-1." + regions.array[i].domain;
-                  var messageValue = (50 - regions.array[i].domain.length);
+                  var messageValue = (49 - regions.array[i].domain.length);
     
                   if (value.length > 52) {
                     return {

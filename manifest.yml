@@ -288,12 +288,11 @@ actions:
     
                 if (regionsList.indexOf(region.hardNodeGroups[k].uniqueName) != -1) {
                   value = envName + "-1." + regions.array[i].domain;
-                  var messageValue = (49 - regions.array[i].domain.length);
     
                   if (value.length > 52) {
                     return {
                       result: 1009,
-                      message: "Domain name length for current regions must be less or equal " + messageValue
+                      message: "Domain name length for current regions must be less or equal " + envName.length
                     }
                   }
                 }

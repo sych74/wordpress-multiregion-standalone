@@ -292,7 +292,7 @@ actions:
                   if (value.length > 52) {
                     return {
                       result: 1009,
-                      message: "Domain name length for current regions must be less or equal " + envName.length
+                      message: "Domain name length for current regions must be less than " + envName.length
                     }
                   }
                 }

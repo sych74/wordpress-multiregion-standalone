@@ -6,10 +6,6 @@ description: WordPress Simple MultiRegion Events
 mixins:
   - https://cdn.jsdelivr.net/gh/jelastic-jps/wordpress-multiregion-standalone@master/configs/additionalGlobals.yaml
 
-onAfterInstallAddon [nodeGroup:cp, id:cdn]:
-  - addFlag
-  - setupCDN
-  - deleteFlag
   
 actions:
   addFlag:
